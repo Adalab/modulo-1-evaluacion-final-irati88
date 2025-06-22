@@ -1,0 +1,15 @@
+/* Restablecer los márgenes y padding de los elementos principales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Restablecer el estilo de la lista */
+ul {
+  list-style: none; /* Eliminar puntos de lista */
+}
+
+/* Restablecer el estilo del enlace */
+a {
+  text-decoration: none; /* Eliminar subrayado */
+}

@@ -1,0 +1,108 @@
+@use '../core/variables' as vars;
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.module-1 {
+    height: 100vh;
+    background-image: url(../../public/images/header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    width: 414px;
+    height: 38px;
+    margin: 62px 0;
+    text-align: center;
+    color: #0C474B;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button {
+    width: 176px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 62px 119px 0 62px;
+    background-color: #0C474B;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.module-2 {
+    background-color: #F0ebe5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-content: center;
+}
+
+.module-3 {
+    background-color: #FF975A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    gap: 20px;
+
+}
+
+.module-3 p {
+    font-size: small;
+}
+
+.comprar-ahora {
+    font-size: medium;
+}
+
+.module-4 {
+    background-color: #F0EBE5;
+    font-family: 'Poppins', sans-serif;
+    color: #0C474B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.module-4 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.module-4 p {
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.module-4 img {
+  padding-top: 100px;
+}

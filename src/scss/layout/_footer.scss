@@ -1,0 +1,25 @@
+@use "../components/links";
+
+.page__footer {
+  padding: 30px;
+  background-color: #0C474B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paragraph {
+  color: #b6c8c9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.paragraph ul li a {
+  font-size: 20px;
+}
+
+.links {
+    list-style: none;;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}

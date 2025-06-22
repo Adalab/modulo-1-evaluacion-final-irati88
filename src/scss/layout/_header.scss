@@ -1,0 +1,23 @@
+.page__header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+
+}
+
+.logo {
+  width: 213px;
+  height: 96px;
+  margin: 0 101px 62px 43px;
+}
+
+.menu-hamburger {
+  width: 24px;
+  height: 24px;
+  margin: 36px 43px 98px 33px;
+  object-fit: contain;
+}
+
