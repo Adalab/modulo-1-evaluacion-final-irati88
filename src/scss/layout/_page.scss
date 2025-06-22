@@ -47,12 +47,15 @@ h1 {
 .module-2 {
     background-color: #F0ebe5;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-    align-content: center;
 }
 
+.module-2 h2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
 .module-3 {
     background-color: #FF975A;
     display: flex;
@@ -71,6 +74,7 @@ h1 {
 
 .comprar-ahora {
     font-size: medium;
+    text-decoration: underline;
 }
 
 .module-4 {
