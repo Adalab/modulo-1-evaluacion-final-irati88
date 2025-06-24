@@ -1,23 +1,142 @@
 .page__header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 20px;
-  width: 100%;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
 
 }
 
-.logo {
-  width: 213px;
-  height: 96px;
-  margin: 0 101px 62px 43px;
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+
+}
+
+.links-menu {
+  display: none;
+
 }
 
 .menu-hamburger {
   width: 24px;
   height: 24px;
   margin: 36px 43px 98px 33px;
-  object-fit: contain;
+  position: fixed;
+
 }
 
+.logo {
+  margin-right: 400px;
+  size: 100px;
+
+}
+
+.module-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #0c474b;
+  gap: 100px;
+  margin-top: 300px;
+
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  width: 414px;
+  text-align: center;
+  color: #0C474B;
+  display: flex;
+  justify-content: center;
+
+}
+
+.button {
+  width: 176px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #0C474B;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+
+}
+
+
+.button:hover {
+  background-color: red;
+  border-radius: 10px;
+  color: black;
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .module-1 {
+    align-items: flex-start;
+    padding-left: 100px;
+    gap: 20px;
+
+  }
+
+  .logo {
+    max-width: 40%;
+
+  }
+
+  h1 {
+    text-align: left;
+
+  }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+  .menu-hamburger {
+    display: none;
+
+  }
+
+  .links-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+  }
+
+  .links-menu li a {
+    font-family: 'Poppins', sans-serif;
+    color: #0c474b;
+    font-size: 16px;
+
+  }
+
+  .module-1 {
+    gap: 0px;
+    justify-content: flex-start;
+
+  }
+
+  h1 {
+    font-size: 36px;
+    text-align: left;
+
+  }
+
+
+}

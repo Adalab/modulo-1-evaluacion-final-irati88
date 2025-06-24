@@ -1,61 +1,83 @@
-@use '../core/variables' as vars;
-
 body {
-margin: 0;
-padding: 0;
-}
-
-.module-1 {
-    height: 100vh;
-    background-image: url(../../public/images/header.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
-h1 {
+.page__main {
+    padding: 0px;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    width: 414px;
-    height: 38px;
-    margin: 62px 0;
-    text-align: center;
-    color: #0C474B;
-    display: flex;
-    justify-content: center;
 
 }
 
-.button {
-    width: 176px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 62px 119px 0 62px;
-    background-color: #0C474B;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
 
-.module-2 {
+
+.module-2-grid {
     background-color: #F0ebe5;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
     gap: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+
 }
 
-.module-2 h2 {
+.module-2-grid h2 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #0C474B;
+    padding: 35px;
+
+}
+
+.module-2-grid h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #0C474B;
+
+}
+
+.module-2-grid p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #0C474B;
+    padding-bottom: 30px;
+
+}
+
+.grid__item--first {
+    text-align: center;
+
+}
+
+.grid__item--second {
+    text-align: center;
+
+}
+
+.grid__item--third {
+
     text-align: center;
 }
+
+.grid__item--fouth {
+
+    text-align: center;
+}
+
+.grid__item--fifth {
+
+    text-align: center;
+}
+
+
+
 .module-3 {
     background-color: #FF975A;
     display: flex;
@@ -64,18 +86,33 @@ h1 {
     color: white;
     font-family: 'Poppins', sans-serif;
     padding: 50px;
-    gap: 20px;
 
 }
 
-.module-3 p {
+.delivery {
+    text-align: center;
+
+}
+
+.module-3 h2 {
+    margin: 10px;
+
+}
+
+.envio-gratis {
     font-size: small;
+    text-align: center;
+
 }
 
 .comprar-ahora {
     font-size: medium;
     text-decoration: underline;
+    margin-top: 20px;
+    padding: 12px;
+
 }
+
 
 .module-4 {
     background-color: #F0EBE5;
@@ -90,7 +127,7 @@ h1 {
 .module-4 h2 {
     font-size: 24px;
     font-weight: 600;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 10px;
     padding-left: 20px;
     display: flex;
@@ -105,8 +142,68 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
-.module-4 img {
-  padding-top: 100px;
+.bathroom {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #F0EBE5;
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .module-2-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        padding-bottom: 50px;
+
+    }
+
+    .grid__item--first {
+        text-align: center;
+        grid-column: 1/4;
+
+    }
+
+    .module-4 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+@media screen and (min-width: 1278px) {
+
+    .module-4 {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .text-button {
+        width: 50vw;
+        justify-content: flex-start;
+
+    }
+
+    .bathroom {
+        width: 50vw;
+
+    }
+
 }

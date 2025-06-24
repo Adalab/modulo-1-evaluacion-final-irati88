@@ -10,3 +10,24 @@
   color: #b6c8c9;
   font-size: 14px;
 }
+
+@media screen and (min-width: 900px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  }
+
+  @media screen and (min-width: 1728px) {
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: #0C474B;
+
+  }
+  
+  }
